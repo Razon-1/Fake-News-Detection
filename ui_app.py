@@ -58,7 +58,7 @@ uploaded_file = st.file_uploader("Or upload a CSV file with a 'text' column:", t
 # Placeholder for prediction result
 result_placeholder = st.empty()
 
-# Dummy prediction function (replace with your model)
+# Dummy prediction function (random output)
 def predict_fake_news(text):
     # Simulate prediction with animation
     with st.spinner('Analyzing...'):
@@ -80,7 +80,7 @@ if st.button("Detect News Authenticity", use_container_width=True):
             <div style='padding: 1em; border-radius: 10px; background: {color}; color: white; text-align: center; font-size: 1.5em; animation: fadeIn 1s;'>
                 {emoji} <b>{label} News</b> <br> Confidence: {confidence:.2%}
             </div>
-            <style>@keyframes fadeIn {0%{opacity:0;}100%{opacity:1;}}</style>
+            <style>@keyframes fadeIn {{0%{{opacity:0;}}100%{{opacity:1;}}}}</style>
         """, unsafe_allow_html=True)
     else:
         st.warning("Please enter some text or upload a file.")
