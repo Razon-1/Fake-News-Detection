@@ -82,13 +82,12 @@ The project performs the following steps:
 
 ### Run Web App (Optional)
 
-* Launch the Flask app for prediction interface:
+* streamlit run f:/project/GitHub/Fake-News-Detection/app.py
 
-  ```bash
-  python app.py
-  ```
+* You can now view your Streamlit app in your browser.
 
-* Access the web app via [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
+* Local URL: http://localhost:8501
+*  Network URL: http://192.168.1.73:8501
 
 ## Results Summary
 
